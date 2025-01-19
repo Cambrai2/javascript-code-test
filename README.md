@@ -1,3 +1,17 @@
+# Quick Start
+
+to install dependencies run `npm i` followed with `npm run build`
+
+## Running Tests
+
+All unit tests are handled via jest and can be run via `npm run test`
+
+## Endpoint
+
+The endpoint `fetchByQuery` takes 3 parameters: `queryPath`, `inputParam` and `limit`:
+
+- queryPath: provides the initial url path eg: `by-author` or `by-year`. This is designated by the type `QueryPath`.
+
 # Javascript Code Test
 
 `BookSearchApiClient` is a simple class that makes a call to a http API to retrieve a list of books and return them.

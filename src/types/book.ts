@@ -1,7 +1,11 @@
-//enum based on provided formats, can be added to
-export enum ApiResponseFormat {
-  JSON,
-  XML,
+export type ResponseType = "json" | "xml";
+
+export type QueryPath = "by-author" | "by-year";
+
+// Allows the easy change of an api as its responseType is stored with its url
+export interface ApiRoute {
+  url: string;
+  responseType: ResponseType;
 }
 
 export interface Book {

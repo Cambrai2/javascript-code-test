@@ -10,7 +10,9 @@ All unit tests are handled via jest and can be run via `npm run test`
 
 The endpoint `fetchByQuery` takes 3 parameters: `queryPath`, `inputParam` and `limit`:
 
-- queryPath: provides the initial url path eg: `by-author` or `by-year`. This is designated by the type `QueryPath`.
+- `queryPath`: provides the initial url path eg: `by-author` or `by-year`. This is designated by the type `QueryPath`.
+- `inputParam`: provides the search value being used in the fetch call eg: `Stephen King` if the queryPath was `by-author`.
+- `limit`: provides an upper limit on the number of entries you wish to return.
 
 # Javascript Code Test
 
